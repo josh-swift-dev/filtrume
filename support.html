@@ -3,119 +3,581 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtrume - Support</title>
+
+    <title>Filtrume Support</title>
+
     <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            max-width: 850px;
+            margin: 0;
+            padding: 0;
+            background: #08080b;
+            color: #f5f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 820px;
             margin: 0 auto;
-            padding: 40px 22px;
-            line-height: 1.7;
-            color: #222;
-            background: #fff;
+            padding: 50px 24px 80px;
         }
-        h1 { margin-bottom: 4px; }
-        h2 { margin-top: 32px; }
-        .subtitle { color: #666; margin-bottom: 32px; }
-        .box {
-            background: #f5f5f7;
-            padding: 18px;
-            border-radius: 12px;
-            margin: 20px 0;
+
+        .hero {
+            text-align: center;
+            padding: 35px 20px 45px;
         }
-        a { color: #0066cc; }
+
+        .icon {
+            width: 78px;
+            height: 78px;
+            margin: 0 auto 20px;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            background:
+                linear-gradient(
+                    135deg,
+                    #7657ff,
+                    #d04cff,
+                    #ff7a45
+                );
+            box-shadow: 0 15px 45px rgba(118, 87, 255, 0.30);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: #a8a8b3;
+            font-size: 18px;
+        }
+
+        .card {
+            background: #111116;
+            border: 1px solid #25252d;
+            border-radius: 22px;
+            padding: 25px;
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-size: 22px;
+        }
+
+        h3 {
+            margin-top: 24px;
+            margin-bottom: 6px;
+            font-size: 17px;
+        }
+
+        p {
+            color: #c7c7cf;
+            margin-top: 8px;
+        }
+
+        ul, ol {
+            color: #c7c7cf;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 9px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .tip {
+            background: rgba(118, 87, 255, 0.12);
+            border: 1px solid rgba(118, 87, 255, 0.28);
+            padding: 15px 17px;
+            border-radius: 15px;
+            margin-top: 16px;
+            color: #d9d2ff;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 9px;
+            margin-right: 5px;
+            border-radius: 20px;
+            background: #25252d;
+            color: #e5e5ea;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        a {
+            color: #a990ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .email-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 14px 22px;
+            border-radius: 14px;
+            background: #ffffff;
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .email-button:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 45px;
+            color: #74747e;
+            font-size: 14px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #25252d;
+            margin: 25px 0;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>Filtrume Support</h1>
-<p class="subtitle">Photo editing. Reimagined.</p>
+<div class="container">
 
-<div class="box">
-    Need help with Filtrume? You're in the right place.
+    <div class="hero">
+        <div class="icon">◉</div>
+
+        <h1>Filtrume Support</h1>
+
+        <div class="subtitle">
+            Create your look. Mix your filters. Keep your original.
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h2>Getting Started</h2>
+
+        <p>
+            Filtrume is a non-destructive photo editor with more than
+            250 original looks, creative effects, manual adjustments,
+            filter stacking, crop tools, and on-device editing features.
+        </p>
+
+        <ol>
+            <li>Open Filtrume.</li>
+            <li>Tap <strong>Choose a Photo</strong>.</li>
+            <li>Select a photo from your Photos library.</li>
+            <li>Choose a filter or effect.</li>
+            <li>Fine-tune your image using the editing controls.</li>
+            <li>Tap <strong>Save</strong> when you're finished.</li>
+        </ol>
+
+        <div class="tip">
+            Filtrume keeps your original photo untouched. Saving creates
+            an edited copy rather than replacing your original.
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h2>Applying Filters</h2>
+
+        <p>
+            Browse the available filter categories and tap a filter
+            thumbnail to apply it to your photo.
+        </p>
+
+        <p>
+            The active filter is visually marked so you can quickly see
+            what is currently applied.
+        </p>
+
+        <p>
+            Tap an active filter again to remove it.
+        </p>
+
+        <p>
+            You can also use the <strong>Filter Intensity</strong>
+            control to make the selected look stronger or more subtle.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Filter Stacking</h2>
+
+        <p>
+            Filtrume lets you decide whether you want a simple
+            one-filter workflow or want to combine multiple filters.
+        </p>
+
+        <h3>Stack OFF</h3>
+
+        <p>
+            By default, you can work with one filter at a time.
+            When <strong>Stack</strong> is turned off, selecting another
+            filter replaces the currently selected filter.
+        </p>
+
+        <p>
+            This is useful when you simply want to browse different
+            looks and choose your favorite.
+        </p>
+
+        <h3>Stack ON</h3>
+
+        <p>
+            Tap the <strong>Stack</strong> button in the filter controls
+            to turn filter stacking on.
+        </p>
+
+        <p>
+            When stacking is enabled, the Stack control illuminates so
+            you can immediately tell that Stack Mode is active.
+        </p>
+
+        <p>
+            You can then combine up to <strong>5 filters</strong> on the
+            same image.
+        </p>
+
+        <div class="tip">
+            Stack Mode is great for creating looks that don't exist as a
+            single preset. For example, you can combine a color treatment,
+            cinematic look, and creative effect into one edit.
+        </div>
+
+
+        <h3>Changing the Stack Order</h3>
+
+        <p>
+            Filters in a stack are applied in order. Because one effect
+            can change the result of the next effect, changing their order
+            can produce a different final image.
+        </p>
+
+        <p>
+            Move filters within the stack to experiment with the order
+            in which the effects are applied.
+        </p>
+
+
+        <h3>Removing a Filter From a Stack</h3>
+
+        <p>
+            Remove an individual filter from the stack using its remove
+            control. The remaining filters stay active.
+        </p>
+
+
+        <h3>Turning Stack Mode Off</h3>
+
+        <p>
+            Tap <strong>Stack</strong> again to turn stacking off.
+        </p>
+
+        <p>
+            If multiple filters are currently stacked, Filtrume returns
+            to single-filter mode and keeps the most recently applied
+            filter.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Comparing With the Original</h2>
+
+        <p>
+            Want to see how far you've taken your photo?
+        </p>
+
+        <p>
+            <strong>Press and hold the photo</strong> while editing to
+            temporarily view the untouched original.
+        </p>
+
+        <p>
+            Release your finger to return to your edited version.
+        </p>
+
+        <div class="tip">
+            This is one of the fastest ways to judge whether an edit is
+            improving the photo or becoming too strong.
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h2>Manual Adjustments</h2>
+
+        <p>
+            Open <strong>Adjust</strong> for additional control over
+            your image.
+        </p>
+
+        <p>Available adjustments include:</p>
+
+        <p>
+            <span class="badge">Exposure</span>
+            <span class="badge">Brightness</span>
+            <span class="badge">Contrast</span>
+            <span class="badge">Saturation</span>
+            <span class="badge">Vibrance</span>
+            <span class="badge">Warmth</span>
+            <span class="badge">Tint</span>
+            <span class="badge">Highlights</span>
+            <span class="badge">Shadows</span>
+            <span class="badge">Sharpness</span>
+            <span class="badge">Vignette</span>
+            <span class="badge">Glow</span>
+        </p>
+
+        <p>
+            Manual adjustments work alongside your selected filters,
+            allowing you to customize a preset instead of being locked
+            into its default appearance.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Crop, Rotate & Flip</h2>
+
+        <p>
+            Open the <strong>Crop</strong> section to change the framing
+            of your photo.
+        </p>
+
+        <p>You can:</p>
+
+        <ul>
+            <li>Crop the image.</li>
+            <li>Choose supported aspect ratios.</li>
+            <li>Rotate the image.</li>
+            <li>Flip the image horizontally.</li>
+            <li>Reset the crop and orientation.</li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+        <h2>AI Tools</h2>
+
+        <p>
+            Filtrume includes supported on-device AI-assisted editing
+            tools directly inside the editor.
+        </p>
+
+        <p>
+            Open the <strong>AI</strong> section to access available
+            intelligent editing options and adjust their intensity when
+            supported.
+        </p>
+
+        <p>
+            Availability and results can vary depending on the photo,
+            subject, and device capabilities.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Favorites</h2>
+
+        <p>
+            With more than 250 looks available, Favorites gives you a
+            faster way to return to the filters you use most.
+        </p>
+
+        <p>
+            Tap the <strong>heart</strong> on a filter to add or remove
+            it from Favorites.
+        </p>
+
+        <p>
+            Open the <strong>Favorites</strong> category to quickly find
+            your saved looks.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Undo</h2>
+
+        <p>
+            If you make a change you don't like, use the
+            <strong>Undo</strong> control at the top of the editor.
+        </p>
+
+        <p>
+            Filtrume keeps recent editing states so you can safely
+            experiment with filters, adjustments, crop settings,
+            and other edits.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Saving Your Photo</h2>
+
+        <p>
+            When you're happy with your edit, tap
+            <strong>Save</strong>.
+        </p>
+
+        <p>
+            Filtrume renders the finished image and saves a
+            full-resolution copy to your Photos library.
+        </p>
+
+        <p>
+            Your original photo remains unchanged.
+        </p>
+
+
+        <h3>Filtrume Can't Save</h3>
+
+        <p>
+            Filtrume needs permission to add the finished image to your
+            Photos library.
+        </p>
+
+        <p>
+            If permission was previously denied, open your iPhone's
+            Settings and allow Filtrume to add photos.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Photo Privacy</h2>
+
+        <p>
+            Filtrume is designed around on-device photo editing.
+            Your photos remain under your control.
+        </p>
+
+        <p>
+            Filtrume only requests the permissions needed for features
+            such as selecting and saving photos.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Troubleshooting</h2>
+
+        <h3>A filter isn't changing the photo</h3>
+
+        <p>
+            Make sure the filter is active. If Stack Mode is off,
+            selecting a different filter replaces the previous filter.
+        </p>
+
+
+        <h3>I can't select several filters</h3>
+
+        <p>
+            Tap <strong>Stack</strong> to enable filter stacking.
+            When Stack Mode is off, Filtrume intentionally allows only
+            one filter at a time.
+        </p>
+
+
+        <h3>I can't add another filter to my stack</h3>
+
+        <p>
+            A stack can contain up to <strong>5 filters</strong>.
+            Remove one of the active filters before adding another.
+        </p>
+
+
+        <h3>My photo looks different after rearranging the stack</h3>
+
+        <p>
+            That's expected. Filter order matters because each filter
+            receives the result produced by the filters before it.
+        </p>
+
+
+        <h3>Saving doesn't work</h3>
+
+        <p>
+            Check that Filtrume has permission to add photos to your
+            Photos library.
+        </p>
+
+
+        <h3>The preview takes a moment to update</h3>
+
+        <p>
+            Some creative effects, stacked filters, AI-assisted tools,
+            and complex edits require more processing than a simple
+            color adjustment. Processing time can vary by device and
+            image.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h2>Still Need Help?</h2>
+
+        <p>
+            If you're experiencing a problem or have a question about
+            Filtrume, send an email and include as much detail as
+            possible about what happened.
+        </p>
+
+        <p>
+            Helpful information includes your iPhone model, iOS version,
+            what you were trying to do, and any error message you saw.
+        </p>
+
+        <a class="email-button"
+           href="mailto:josh.swift.dev@gmail.com?subject=Filtrume%20Support">
+            Contact Filtrume Support
+        </a>
+
+        <p>
+            <a href="mailto:josh.swift.dev@gmail.com?subject=Filtrume%20Support">
+                josh.swift.dev@gmail.com
+            </a>
+        </p>
+    </div>
+
+
+    <div class="footer">
+        Filtrume • Color without limits.<br>
+        Your photos stay yours.
+    </div>
+
 </div>
-
-<h2>Getting Started</h2>
-
-<p>
-Open Filtrume and tap <strong>Choose a Photo</strong> to select an image.
-</p>
-
-<p>
-You can then browse Filtrume's collection of photo looks, color effects,
-film-inspired styles, artistic effects, drawing effects, and other
-creative filters.
-</p>
-
-<h2>Adjusting a Filter</h2>
-
-<p>
-After selecting a look, use the adjustment controls to customize the
-image. Filtrume includes controls for features such as exposure,
-brightness, contrast, saturation, vibrance, warmth, tint, highlights,
-shadows, sharpness, vignette, and glow.
-</p>
-
-<h2>Comparing With the Original</h2>
-
-<p>
-While editing, use the compare feature to temporarily view the original
-photo and compare it with your edited version.
-</p>
-
-<h2>Crop and Rotation</h2>
-
-<p>
-The Crop section provides multiple aspect ratios and rotation controls
-so you can prepare your image for different uses.
-</p>
-
-<h2>Saving Photos</h2>
-
-<p>
-Tap <strong>Save</strong> when you are finished editing.
-Filtrume renders the edited image and saves the completed photo to your
-photo library.
-</p>
-
-<p>
-iOS may ask Filtrume for permission to add photos to your library.
-This permission is necessary for Filtrume to save your finished image.
-</p>
-
-<h2>Can't Save a Photo?</h2>
-
-<p>
-If photo-saving permission was previously denied, open your iPhone
-Settings, locate Filtrume, and allow Filtrume permission to add photos.
-Then return to the app and try saving again.
-</p>
-
-<h2>Your Original Photo</h2>
-
-<p>
-Editing in Filtrume is non-destructive. Saving an edited photo creates
-an edited result rather than intentionally replacing your original
-photo.
-</p>
-
-<h2>Need More Help?</h2>
-
-<p>
-For questions, bug reports, or support requests, email:
-</p>
-
-<p>
-<a href="mailto:josh.swift.dev@gmail.com?subject=Filtrume%20Support">
-<strong>josh.swift.dev@gmail.com</strong>
-</a>
-</p>
-
-<p>
-Please include a brief description of the issue and, when helpful,
-your iPhone model and iOS version.
-</p>
 
 </body>
 </html>
